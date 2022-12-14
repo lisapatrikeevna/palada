@@ -1,0 +1,23 @@
+.header{
+    background: rgb(225,229,238);
+    background: linear-gradient(90deg, rgba(225,229,238,1) 0%, rgba(255,255,255,1) 68%, rgba(225,229,238,1) 100%);
+}
+.root{
+    flex-grow: 1;
+    justify-content: space-between;
+    /*background: #fff;*/
+    color: #181818;
+}
+.menuButton {
+    margin-right: 0.2em;
+}
+.title {
+    flex-grow: 1;
+}
+.logo{
+ /*flex-grow: 1,*/
+}
+.listMenu a{
+    color: #272727;
+    text-decoration: none;
+}

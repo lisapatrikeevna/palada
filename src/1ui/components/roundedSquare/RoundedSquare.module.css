@@ -1,0 +1,41 @@
+.root{
+    border-radius: 10px 38px;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    display: block;
+    position: relative;
+    /* border: 2px solid darkgreen; */
+    margin: 2% 1%;
+}
+.img{
+    /* width: 100%; */
+    height: inherit;
+    opacity: 0.3;
+}
+.img:hover{
+    opacity: 1;
+}
+.inner{
+    background: #fff;
+    border: 1px solid #DADADA;
+    border-radius: 10px 38px;
+    font-size: 18px;
+    text-align: center;
+    color: #10233E;
+    /* margin-top: 82%; */
+    font-weight: normal;
+    letter-spacing: 0.03em;
+    height: 55px;
+    padding-top: 11px;
+    position: absolute;
+    bottom: 0;
+    width: -webkit-fill-available;
+}
+.wrapp-img__link_deck h3 {
+    color: #10233E;
+    font-size: 20px;
+    line-height: 29px;
+    margin-top: 0;
+    font-weight: 900;
+}

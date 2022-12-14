@@ -1,0 +1,36 @@
+.textBlock{
+    padding: 5% 2%;
+    color: #10233E;
+    margin-top: -4%;
+    margin-bottom: 3%;
+    position: relative;
+}
+.title:after{
+    display: block;
+    content: '';
+    width: 15%;
+    height: 3px;
+    background: #0b6eb0;
+    position: absolute;
+    right: 25px;
+    top: 98px;
+}
+ .subtitle{
+    margin-bottom: 45px;
+    font-weight: bold;
+    font-size: 35px;
+}
+@media screen and (max-width: 560.98px) {
+    .title{
+        font-size: 40px;
+    }
+    .subtitle{
+        font-size: 22px;
+    }
+}
+    @media screen and (max-width: 400px) {
+
+    .title:after{
+        display: none;
+    }
+}

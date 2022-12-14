@@ -1,0 +1,22 @@
+.root{
+    background: url("./../../../assets/offer-bg.jpg")no-repeat center top/cover;
+    display: flex;
+    padding: 2% 5%;
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+    color: #10233E;
+}
+.title{
+    font-size: 58px!important;
+    font-weight: bold!important;
+}
+.imgWrap{
+    width: 49%;
+}
+.textWrap{
+    width: 40%;
+}
+.imgWrap>img{
+    width: 100%;
+}
