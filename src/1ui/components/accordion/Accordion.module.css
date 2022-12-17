@@ -1,0 +1,14 @@
+.imgFaq{
+    width: 200px;
+    transform: rotate(15deg);
+    height: fit-content;
+}
+.img{
+    width: 100%;
+}
+.answerWrap{
+    display: flex;
+}
+.answer{
+    width: 90%;
+}
