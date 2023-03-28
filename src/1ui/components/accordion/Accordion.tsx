@@ -58,7 +58,6 @@ const CustomizedAccordions=({faqList}:any) =>{
     return (
         <div>
             {faqList.map((f:faqListItemType,i:number)=>{
-                // console.log("ff!!!!!!!!", `panel${i}`);
                 return  <Accordion expanded={expanded === `panel${i}`} onChange={handleChange(`panel${i}`)}>
                     <AccordionSummary aria-controls={`panel${i}d-content`} id={`panel${i}d-header`}>
                         <Typography>{f.question}</Typography>

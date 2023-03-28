@@ -4,3 +4,9 @@
     color: #fff;
     background: darkblue url("../../../assets/cirkle.jpg") no-repeat center top/cover;
 }
+.logo{
+    width: 200px;
+}
+.listLinks{
+    display: flex;
+}

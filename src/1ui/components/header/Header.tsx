@@ -22,6 +22,7 @@ const Header = () => {
     };
 
     const handleClose = () => {
+        debugger
         setAnchorEl(null);
     };
 
@@ -42,11 +43,12 @@ const Header = () => {
                     <Menu id="menu-appbar" anchorEl={anchorEl} anchorOrigin={{vertical: 'top', horizontal: 'right'}}
                           keepMounted transformOrigin={{vertical: 'top', horizontal: 'right',}}
                           open={open} onClose={handleClose} className={cl.listMenu}>
-                        <MenuItem onClick={handleClose}><Link to={PATH.ABOUT}>about</Link></MenuItem>
-                        <MenuItem onClick={handleClose}><Link to={"/"}>prise</Link></MenuItem>
-                        <MenuItem onClick={handleClose}><Link to={"/"}>reviev</Link></MenuItem>
-                        <MenuItem onClick={handleClose}><Link to={PATH.FAQ}>faq</Link></MenuItem>
-                        <MenuItem onClick={handleClose}><Link to={PATH.CONTACTS}>contacts</Link></MenuItem>
+                        <MenuItem onClick={handleClose}><Link to={PATH.ABOUT}>About</Link></MenuItem>
+                        <MenuItem onClick={handleClose}><Link to={PATH.PRICE}>Price</Link></MenuItem>
+                        <MenuItem onClick={handleClose}><Link to={PATH.CITIES}>Сities list</Link></MenuItem>
+                        <MenuItem onClick={handleClose}><Link to={"/"}>Reviev</Link></MenuItem>
+                        <MenuItem onClick={handleClose}><Link to={PATH.FAQ}>Faq</Link></MenuItem>
+                        <MenuItem onClick={handleClose}><Link to={PATH.CONTACTS}>Contacts</Link></MenuItem>
                     </Menu>
                 </Toolbar>
             {/*</Container>*/}

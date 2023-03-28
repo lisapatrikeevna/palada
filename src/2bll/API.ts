@@ -9,6 +9,9 @@ const instans = axios.create({
     //     'API-KEY': '40979d82-3c32-4398-abbe-81041d6b3ea6'
     // }
 })
+const mg=axios.create({
+    baseURL: 'https://maps.googleapis.com/maps/api/js'
+})
 export const MessageApi = {
     sendMessage(data:QuestionFormValuesType) {
         console.log('data:QuestionFormValuesType',data);

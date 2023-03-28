@@ -1,7 +1,7 @@
 import {Box, Container, TextField, Typography} from '@mui/material';
 import React, {useState} from 'react';
 import cl from './HaveQuestions.module.css'
-import {Field, Formik, FormikErrors} from "formik";
+import {Field, Formik, FormikErrors, FormikProvider} from "formik";
 import {SendUsersMessageTC} from "../../../2bll/MessagesReducer";
 import {useDispatch} from "react-redux";
 
@@ -14,6 +14,7 @@ export type QuestionFormValuesType = {
 const HaveQuestions = () => {
     const initialValues: QuestionFormValuesType = {tel: "+490000000000", userName: "lisa", email: "lisa@gmail.com"}
     const dispatch=useDispatch()
+
     return (
         <Box className={cl.root}>
             {/*<Container t="center" style={{textAlign:"left"}}>*/}
@@ -47,27 +48,21 @@ const HaveQuestions = () => {
                         }}
                         onSubmit={(values, {setSubmitting}) => {
                           setTimeout(() => {
-                              // @ts-ignore
-                              dispatch(SendUsersMessageTC(values))
-                                // alert(JSON.stringify(values, null, 2));
-                                setSubmitting(false);
-                            }, 400);
-                        }}>
-                    {({
-                          values,
-                          errors,
-                          touched,
-                          handleChange,
-                          handleBlur,
-                          handleSubmit,
-                          isSubmitting,
-                          /* and other goodies */
-                      }) => (
+                             // @ts-ignore
+                             dispatch(SendUsersMessageTC(values))
+                             // alert(JSON.stringify(values, null, 2));
+                             setSubmitting(false);
+                             }, 400);
+                         // formik.resetForm()
+                            }}>
+                    {({values, errors, touched, handleChange, handleBlur, handleSubmit, isSubmitting}) => (
                         <form className={cl.inputsWrap} onSubmit={handleSubmit}>
                             <Box className={cl.itemWrap}>
                                 <TextField required id="outlined-required" label="your name" defaultValue="user"
                                            value={values.userName}
-                                           name="userName" onChange={handleChange} onBlur={handleBlur}/>
+                                           // {...Formik.getFieldProps('userName')}
+                                           name="userName" onChange={handleChange} onBlur={handleBlur}
+                                />
                                 <p className={cl.errorMessage}> {errors.userName && touched.userName && errors.userName}</p>
                             </Box>
                             <Box className={cl.itemWrap}>

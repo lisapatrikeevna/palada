@@ -12,3 +12,8 @@
 .answer{
     width: 90%;
 }
+@media screen and (max-width: 400px) {
+    .imgFaq{
+        display: none;
+    }
+}

@@ -64,10 +64,10 @@ const BlueBlockLine = ({title, arr}: any) => {
     const handleChange = (event: React.ChangeEvent<{}>, newValue: number) => {
         setValue(newValue);
     };
-    console.log('arr keys', arrayKeys)
-    console.log('value', value)
-    console.log('arr0', arr[arrayKeys[value]])
-    console.log('arrayKeys[value]rr0', arrayKeys[value])
+    // console.log('arr keys', arrayKeys)
+    // console.log('value', value)
+    // console.log('arr0', arr[arrayKeys[value]])
+    // console.log('arrayKeys[value]rr0', arrayKeys[value])
     return (
         <>
             <div className={cl.root}>
