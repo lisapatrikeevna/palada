@@ -3,6 +3,7 @@ import BgBlock from "../../components/bgBlock/BgBlock";
 import faq from "../../../assets/faq.png";
 import Map from "../../components/map/Map";
 import {Loader} from "@googlemaps/js-api-loader";
+import {GogleMapKey} from "../../../GogleMapKey";
 
 const Contacts = () => {
     const google = window.google
@@ -22,7 +23,7 @@ const Contacts = () => {
     const loader = new Loader({
         // apiKey: "foo",
         // apiKey: "",
-        apiKey: "AIzaSyApaAEnzpuAzHciDWNr6X7CmCUKMlEdBAQ",
+        apiKey: GogleMapKey,
         // apiKey: "AIzaSyAU8oDXI7k_aN52oFslAvE4Ufip3OSnuh4",//perevozilca apiKey
         version: "weekly",
         libraries: ["places"]

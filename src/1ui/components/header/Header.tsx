@@ -1,7 +1,5 @@
 import React, {useState} from 'react';
-// import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
-// import MenuIcon from '@mui/icons-material';
-import {AppBar, Toolbar, IconButton, Menu, MenuItem, Container} from '@mui/material';
+import {AppBar, Toolbar, IconButton, Menu, MenuItem} from '@mui/material';
 import logo from '../../../assets/logo01.png';
 import MenuIcon from '@mui/icons-material/Menu';
 import cl from './Header.module.css'
@@ -29,12 +27,9 @@ const Header = () => {
     return (
 
         <AppBar position="static" className={cl.header}>
-            {/*<Container>*/}
                 <Toolbar className={cl.root}>
                     <Link className={cl.logo} to={PATH.HOME}><img src={logo} style={{width: 90}}/></Link>
                     {/*<Link className={cl.logo} to={"/"}><img src={logo} style={{width:90}} /></Link>*/}
-                    {/*<IconButton edge="start" ></IconButton>*/}
-                    {/*<Typography variant="h6" className={classes.title}>app bar</Typography>*/}
                     <IconButton aria-label="menu" aria-controls="menu-appbar" aria-haspopup="true" edge="end"
                                 onClick={handleMenu} color="inherit" className={cl.menuButton}
                     >
@@ -51,7 +46,6 @@ const Header = () => {
                         <MenuItem onClick={handleClose}><Link to={PATH.CONTACTS}>Contacts</Link></MenuItem>
                     </Menu>
                 </Toolbar>
-            {/*</Container>*/}
         </AppBar>
 
     );

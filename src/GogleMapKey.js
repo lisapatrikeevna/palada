@@ -1,0 +1,1 @@
+ export const GogleMapKey = "AIzaSyApaAEnzpuAzHciDWNr6X7CmCUKMlEdBAQ"

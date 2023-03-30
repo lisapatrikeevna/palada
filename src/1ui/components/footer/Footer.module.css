@@ -9,4 +9,37 @@
 }
 .listLinks{
     display: flex;
+    width: 200px;
+    margin: 20px auto;
+    justify-content: space-around;
+}
+.Copyright{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.links{
+    display: flex;
+    align-items: center;
+    margin-left: 7px;
+}
+.adresWrap{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+.footerItem{
+    background: #e2e6ef;
+    width: 100%;
+    box-shadow: none;
+}
+.pagesLinksWrap{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.pagesLinksWrap>a{
+    color: inherit;
+    text-decoration: none;
 }
